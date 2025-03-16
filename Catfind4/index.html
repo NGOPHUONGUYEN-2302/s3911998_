@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meow Universe 🐾</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <script defer src="js/script.js"></script>
+    <script defer src="js/chatbot.js"></script>
+    <script defer src="js/animations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Meow Universe 🐾</h1>
+        <p>Explore the world of cats and chat with AI!</p>
+    </header>
+
+    <section class="cat-slider">
+        <div class="swiper">
+            <div class="swiper-wrapper" id="catImages">
+                <!-- Cat images will be added here using JavaScript -->
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <section class="chatbot-container">
+        <h2>💬 AI Cat Chatbot</h2>
+        <div id="chatbot">
+            <div id="chatbox"></div>
+            <div class="input-container">
+                <input type="text" id="userInput" placeholder="Ask about cats (food, health...)" onkeypress="handleKeyPress(event)">
+                <button onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i> Send
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Meow Universe. All rights reserved.</p>
+    </footer>
+</body>
+</html>

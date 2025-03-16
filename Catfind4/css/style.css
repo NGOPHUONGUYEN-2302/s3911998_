@@ -1,0 +1,151 @@
+/* style.css */
+body {
+    font-family: 'Mali', sans-serif; /* Round font */
+    background: #fdf6ec; /* Soft pastel color */
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+
+header {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ff914d; /* Main orange color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 1.1em;
+    color: #777;
+}
+
+/* Cat Slider */
+.cat-slider {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Chatbot */
+.chatbot-container {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff3e0; /* Pastel color */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#chatbox {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ff914d;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#chatbox div {
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+#chatbox div.user {
+    background-color: #e2f7ff;
+    text-align: right;
+}
+
+#chatbox div.bot {
+    background-color: #f0f0f0;
+    text-align: left;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#userInput {
+    width: 80%;
+    padding: 12px;
+    border: 2px solid #ff914d;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+button {
+    padding: 12px 20px;
+    background: #ff914d; /* Orange color */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background: #ff5722;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #777;
+    font-size: 0.9em;
+}
+
+/*Loading*/
+.loading {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Swiper CSS */
+.swiper {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #ff914d; /* Orange color */
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff914d; /* Orange color */
+}
